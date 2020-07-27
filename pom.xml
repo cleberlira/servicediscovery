@@ -10,8 +10,13 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         
+<<<<<<< HEAD
         <vertx.projectVersion>3.9.1</vertx.projectVersion>
         <vertx.verticle>br.ufba.dcc.wiser.iotreactive.app.App</vertx.verticle>
+=======
+        <vertx.projectVersion>3.8.2</vertx.projectVersion>
+        <vertx.verticle>br.ufba.dcc.wiser.circuitbreaker.provider.Provider</vertx.verticle>
+>>>>>>> 0d24d0b4dead3707107636c5e14ca769a87713a1
    
     </properties>
     
@@ -33,6 +38,7 @@
             <artifactId>vertx-core</artifactId>
             
         </dependency>
+<<<<<<< HEAD
 
  <dependency>
       <groupId>io.vertx</groupId>
@@ -74,6 +80,9 @@
 
 
  
+=======
+                
+>>>>>>> 0d24d0b4dead3707107636c5e14ca769a87713a1
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
@@ -96,6 +105,7 @@
   
    <build>
         <plugins>
+<<<<<<< HEAD
 
 
  <plugin>
@@ -122,6 +132,8 @@
                 <version>2.22.0</version>
             </plugin>
 
+=======
+>>>>>>> 0d24d0b4dead3707107636c5e14ca769a87713a1
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -133,4 +145,8 @@
         </plugins>
     </build>
     <name>servicediscovery</name>
+<<<<<<< HEAD
 </project>
+=======
+</project>
+>>>>>>> 0d24d0b4dead3707107636c5e14ca769a87713a1
