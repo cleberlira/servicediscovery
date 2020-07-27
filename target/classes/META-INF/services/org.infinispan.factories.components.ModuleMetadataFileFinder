@@ -1,0 +1,3 @@
+org.infinispan.multimap.impl.EmbeddedMultimapMetadataFileFinder
+org.infinispan.lock.impl.ClusteredLockMetadataFileFinder
+org.infinispan.counter.impl.CounterMetadataFileFinder

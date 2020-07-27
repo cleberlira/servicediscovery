@@ -1,0 +1,9 @@
+br/ufba/dcc/wiser/iotreactive/configuration/Configuration.class
+br/ufba/dcc/wiser/iotreactive/model/Irrigation.class
+br/ufba/dcc/wiser/iotreactive/configuration/Configuration$Zookeeper.class
+br/ufba/dcc/wiser/iotreactive/discovery/Consumer.class
+br/ufba/dcc/wiser/iotreactive/configuration/Configuration$Server.class
+br/ufba/dcc/wiser/iotreactive/discovery/Publisher.class
+br/ufba/dcc/wiser/iotreactive/app/App.class
+br/ufba/dcc/wiser/iotreactive/discovery/ServiceDiscoveryService.class
+br/ufba/dcc/wiser/iotreactive/model/IrrigationDAO.class

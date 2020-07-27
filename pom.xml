@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>br.ufba.dcc.wiser.iot_reactive</groupId>
+    <artifactId>ServiceDiscovery</artifactId>
+     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        
+        <vertx.projectVersion>3.9.1</vertx.projectVersion>
+        <vertx.verticle>br.ufba.dcc.wiser.iotreactive.app.App</vertx.verticle>
+   
+    </properties>
+    
+            
+   <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.vertx</groupId>
+        <artifactId>vertx-dependencies</artifactId>
+        <version>${vertx.projectVersion}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+      </dependencyManagement>
+    <dependencies>
+       <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-core</artifactId>
+            
+        </dependency>
+
+ <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-infinispan</artifactId>
+    </dependency>
+    
+    
+    <!-- https://mvnrepository.com/artifact/io.vertx/vertx-service-discovery-backend-zookeeper -->
+<dependency>
+    <groupId>io.vertx</groupId>
+    <artifactId>vertx-service-discovery-backend-zookeeper</artifactId>
+</dependency>
+
+<dependency>
+<groupId>io.vertx</groupId>
+<artifactId>vertx-zookeeper</artifactId>
+<version>3.9.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.vertx/vertx-web-client -->
+<dependency>
+    <groupId>io.vertx</groupId>
+    <artifactId>vertx-web-client</artifactId>
+   
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-gradle-plugin -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-gradle-plugin</artifactId>
+    <version>2.3.1.RELEASE</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <version>2.3.1.RELEASE</version>
+</dependency>
+
+
+ 
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
+          
+        </dependency>
+
+      <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-rx-java</artifactId>
+    </dependency>
+      <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-service-discovery</artifactId>
+        
+        </dependency>
+      
+    </dependencies>
+    
+           
+  
+   <build>
+        <plugins>
+
+
+ <plugin>
+  <groupId>io.reactiverse</groupId>
+  <artifactId>vertx-maven-plugin</artifactId>
+  <version>1.0.18</version> 
+  <executions>
+    <execution>
+      <id>vmp</id>
+      <goals>
+        <goal>initialize</goal>
+        <goal>package</goal>
+      </goals>
+    </execution>
+  </executions>
+  <configuration>
+    <redeploy>true</redeploy>
+  </configuration>
+</plugin>
+
+ <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>servicediscovery</name>
+</project>
